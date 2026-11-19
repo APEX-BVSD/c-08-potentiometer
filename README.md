@@ -32,6 +32,8 @@ Use the diagram below to support you.
 ## 3. Read the potentiometer
 Upload the pot.ino sketch to the Arduino. Open the Serial monitor and read the values. Turn the potentionmeter knob.
 
+The Arduino Uno uses a 10-bit analog-to-digital converter (ADC) to measure the voltage at an analog input pin. This converts a voltage between 0V and 5V into a number between 0 and 1023. Unlike a digital input, which reads HIGH or LOW, an analog input can represent many different levels.
+
 ## Reflect
 1. What is the lowest and highest values you observe?
     > your answer
@@ -65,4 +67,4 @@ The `map()` function converts a number from one range into another. Here we are 
 
 ## 5. Challenge
 Try re-writing your program so the potentiometer controls the speed the LED blinks at. 
-Hint: Use map() to convert the potentiometer value to delay. You will need to change back to `digitalWrite()`.
+Hint: Use map() to convert the potentiometer value to a delay between 100 and 1000 milliseconds. Use `digitalWrite()` to turn the LED on and off. 
