@@ -1,4 +1,4 @@
-**
+/**
  * Demonstrates how to use the potentiometer.
  * @author First Last
  * @date Month Year
